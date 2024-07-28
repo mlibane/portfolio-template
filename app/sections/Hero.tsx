@@ -50,7 +50,7 @@ const Hero = () => {
         >
           <div className="text-left">
             <motion.h1 variants={itemVariants} className="text-5xl lg:text-7xl font-bold mb-4">
-              Hi, I'm <span className="text-primary">John Doe</span>
+              Hi, I&apos;m <span className="text-primary">John Doe</span>
             </motion.h1>
             <motion.h2 variants={itemVariants} className="text-3xl lg:text-4xl font-semibold mb-6">
               <TypeAnimation
@@ -70,7 +70,7 @@ const Hero = () => {
             </motion.h2>
             <motion.p variants={itemVariants} className="text-xl mb-8 max-w-xl">
               Passionate about creating innovative web solutions and delivering exceptional user experiences.
-              Let's build something amazing together!
+              Let&apos;s build something amazing together!
             </motion.p>
             <motion.div variants={itemVariants} className="flex space-x-4 z-20">
               <Button size="lg" className="relative z-20">View My Work</Button>
