@@ -4,6 +4,7 @@ import React, { useRef, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Points, PointMaterial } from '@react-three/drei';
 import { inSphere } from 'maath/random';
+import * as THREE from 'three';
 
 function StarField(props: any) {
   const ref = useRef<THREE.Points>(null);

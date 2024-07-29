@@ -52,7 +52,7 @@ const Hero = () => {
             <motion.h1 variants={itemVariants} className="text-5xl lg:text-7xl font-bold mb-4">
               Hi, I&apos;m <span className="text-primary">John Doe</span>
             </motion.h1>
-            <motion.h2 variants={itemVariants} className="text-3xl lg:text-4xl font-semibold mb-6">
+            <motion.h2 variants={itemVariants} className="text-3xl lg:text-4xl font-semibold mb-6 subtitle-text">
               <TypeAnimation
                 sequence={[
                   'Full-Stack Developer',
@@ -65,7 +65,6 @@ const Hero = () => {
                 wrapper="span"
                 cursor={true}
                 repeat={Infinity}
-                className="text-secondary"
               />
             </motion.h2>
             <motion.p variants={itemVariants} className="text-xl mb-8 max-w-xl">
@@ -80,7 +79,7 @@ const Hero = () => {
           <motion.div variants={itemVariants} className="relative">
             <div className="w-full h-[500px] relative">
               <Image
-                src="/profile-image.jpg" 
+                src="/passman.jpg" 
                 alt="Latest Project"
                 layout="fill"
                 objectFit="cover"
