@@ -29,7 +29,7 @@ const Contact = () => {
   }
 
   return (
-    <section className="relative min-h-screen flex flex-col justify-center items-center py-20">
+    <section id="contact" className="relative min-h-screen flex flex-col justify-center items-center py-20">
       <AnimatedBackground />
       <div className="container mx-auto px-4 z-10 relative">
         <h2 className="text-4xl font-bold text-center mb-12">Contact Me</h2>

@@ -5,7 +5,7 @@ import { motion, useAnimation, useInView } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import { Button } from "@/components/ui/button";
 import { SiGithub, SiLinkedin, SiTwitter } from 'react-icons/si';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import AnimatedBackground from '../components/AnimatedBackground';
 
 const Hero = () => {
@@ -39,7 +39,7 @@ const Hero = () => {
   };
 
   return (
-    <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <AnimatedBackground />
       <div className="container mx-auto px-4 z-10 relative">
         <motion.div

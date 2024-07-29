@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import { motion } from 'framer-motion';
 import {
   Carousel,
@@ -33,12 +33,12 @@ const projects = [
     githubLink: "https://github.com/yourusername/ai-content-generator",
     liveLink: "https://ai-content-generator-demo.herokuapp.com"
   },
-  // Add even more  of your projects below to add to the carousel.
 ];
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 bg-gradient-to-b from-background to-secondary/20">
+    <section id="projects" className="relative py-20">
+      <AnimatedBackground />
       <div className="container mx-auto px-4">
         <motion.h2 
           className="text-4xl font-bold mb-12 text-center"

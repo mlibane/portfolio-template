@@ -1,7 +1,6 @@
 import React from 'react';
 import { Inter, Poppins } from 'next/font/google';
 import { ThemeProvider } from './providers/ThemeProvider';
-import { cn } from './lib/utils';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
