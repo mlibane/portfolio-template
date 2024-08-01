@@ -47,11 +47,11 @@ const Skills = () => {
   const [selectedSkill, setSelectedSkill] = useState<Skill | null>(null);
 
   return (
-    <section id="skills" className="relative py-20">
+    <section id="skills" className="relative py-16 md:py-20">
       <AnimatedBackground />
       <div className="container mx-auto px-4 z-10 relative">
         <motion.h2 
-          className="text-4xl font-bold mb-12 text-center"
+          className="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-center"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -61,12 +61,14 @@ const Skills = () => {
         <Tabs defaultValue="Frontend" className="w-full max-w-4xl mx-auto">
           <TabsList className="grid w-full grid-cols-3 mb-8 relative z-20">
             {skillCategories.map((category) => (
-              <TabsTrigger key={category.name} value={category.name}>{category.name}</TabsTrigger>
+              <TabsTrigger key={category.name} value={category.name} className="text-xs md:text-sm">
+                {category.name}
+              </TabsTrigger>
             ))}
           </TabsList>
           {skillCategories.map((category) => (
             <TabsContent key={category.name} value={category.name}>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                 {category.skills.map((skill, index) => (
                   <motion.div 
                     key={skill.name}
@@ -78,10 +80,10 @@ const Skills = () => {
                       className="cursor-pointer hover:shadow-lg transition-shadow duration-300 relative z-20"
                       onClick={() => setSelectedSkill(skill)}
                     >
-                      <CardContent className="p-6">
-                        <h3 className="text-xl font-semibold mb-2">{skill.name}</h3>
-                        <Progress value={skill.level} className="h-2 mb-4" />
-                        <p className="text-sm text-muted-foreground">{skill.description}</p>
+                      <CardContent className="p-4 md:p-6">
+                        <h3 className="text-lg md:text-xl font-semibold mb-2">{skill.name}</h3>
+                        <Progress value={skill.level} className="h-2 mb-2 md:mb-4" />
+                        <p className="text-xs md:text-sm text-muted-foreground">{skill.description}</p>
                       </CardContent>
                     </Card>
                   </motion.div>
@@ -97,7 +99,7 @@ const Skills = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
-            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
             onClick={() => setSelectedSkill(null)}
           >
             <Card className="w-full max-w-md m-4 relative z-60">

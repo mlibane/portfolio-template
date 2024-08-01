@@ -15,7 +15,6 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Github, ExternalLink } from 'lucide-react';
 import AnimatedBackground from '../components/AnimatedBackground';
-import Link from 'next/link';
 
 const projects = [
   {
@@ -40,7 +39,7 @@ const Projects = () => {
   return (
     <section id="projects" className="relative py-20">
       <AnimatedBackground />
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 relative z-10">
         <motion.h2 
           className="text-4xl font-bold mb-12 text-center"
           initial={{ opacity: 0, y: -20 }}
@@ -60,7 +59,8 @@ const Projects = () => {
                       alt={project.title} 
                       width={800} 
                       height={400} 
-                      className="object-cover w-full h-64"
+                      layout="responsive"
+                      objectFit="cover"
                     />
                   </CardHeader>
                   <CardContent className="p-6">
@@ -73,23 +73,30 @@ const Projects = () => {
                     </div>
                   </CardContent>
                   <CardFooter className="flex justify-between">
-                    <Link href={project.githubLink} passHref>
-                      <Button variant="outline" size="sm" className="flex items-center" onClick={(e) => e.preventDefault()}>
-                        <Github className="mr-2 h-4 w-4" /> View Code
-                      </Button>
-                    </Link>
-                    <Link href={project.liveLink} passHref>
-                      <Button size="sm" className="flex items-center" onClick={(e) => e.preventDefault()}>
-                        <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
-                      </Button>
-                    </Link>
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="flex items-center"
+                      onClick={() => window.open(project.githubLink, '_blank', 'noopener,noreferrer')}
+                    >
+                      <Github className="mr-2 h-4 w-4" /> View Code
+                    </Button>
+                    <Button 
+                      size="sm" 
+                      className="flex items-center"
+                      onClick={() => window.open(project.liveLink, '_blank', 'noopener,noreferrer')}
+                    >
+                      <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
+                    </Button>
                   </CardFooter>
                 </Card>
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <div className="hidden md:block">
+            <CarouselPrevious className="absolute -left-12 top-1/2 -translate-y-1/2" />
+            <CarouselNext className="absolute -right-12 top-1/2 -translate-y-1/2" />
+          </div>
         </Carousel>
       </div>
     </section>

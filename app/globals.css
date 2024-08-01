@@ -178,3 +178,26 @@ section {
   flex: 0 0 100%;
   min-width: 0;
 }
+
+#projects .embla__slide {
+  flex: 0 0 100% !important;
+}
+
+#projects .embla__viewport {
+  overflow: visible;
+}
+
+#projects .embla__container {
+  backface-visibility: hidden;
+  display: flex;
+  touch-action: pan-y;
+}
+
+.md\:hidden {
+  touch-action: auto !important;
+  user-select: auto !important;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
