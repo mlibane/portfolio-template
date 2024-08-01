@@ -47,13 +47,13 @@ const About = () => {
               transition={{ duration: 0.8 }}
             >
               <p className="text-lg mb-6">
-                Hi, I&apos;m John Doe, a passionate full-stack developer with 5 years of experience
+                Hi, I&apos;m John Doe, a passionate Lebron James Stan with 5 years of experience
                 in creating robust web applications. I specialize in React, Node.js, and
                 MongoDB, and I&apos;m always eager to learn new technologies.
               </p>
               <p className="text-lg mb-6">
-                When I&apos;m not coding, you can find me hiking in the mountains or experimenting
-                with new recipes in the kitchen. I believe in continuous learning and giving
+                When I&apos;m not coding, you can find me dreaming about lebron or experimenting
+                with new recipes for lebron. I believe in continuous learning and giving
                 back to the developer community through open-source contributions and mentoring.
               </p>
               <div className="mb-8">

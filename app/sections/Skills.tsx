@@ -7,6 +7,12 @@ import { Progress } from "@/components/ui/progress";
 import { Card, CardContent } from "@/components/ui/card";
 import AnimatedBackground from '../components/AnimatedBackground';
 
+interface Skill {
+  name: string;
+  level: number;
+  description: string;
+}
+
 const skillCategories = [
   {
     name: "Frontend",
@@ -38,7 +44,7 @@ const skillCategories = [
 ];
 
 const Skills = () => {
-  const [selectedSkill, setSelectedSkill] = useState(null);
+  const [selectedSkill, setSelectedSkill] = useState<Skill | null>(null);
 
   return (
     <section id="skills" className="relative py-20">

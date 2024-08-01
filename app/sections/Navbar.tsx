@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
-import AnimatedBackground from '@/components/AnimatedBackground';
+import AnimatedBackground from '../components/AnimatedBackground';
 
 const navItems = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
 
@@ -29,6 +29,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-4 right-4 z-50">
+      <AnimatedBackground />
       <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-lg p-2">
         <ul className="space-y-2">
           {navItems.map((item) => (

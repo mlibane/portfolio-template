@@ -18,7 +18,7 @@ export default function Home() {
   };
 
   if (loading) {
-    return <LoadingScreen finishLoading={finishLoading} name="Your Name" />;
+    return <LoadingScreen finishLoading={finishLoading} />;
   }
   
   return (

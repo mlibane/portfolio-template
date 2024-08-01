@@ -1,14 +1,14 @@
-const { fontFamily } = require("tailwindcss/defaultTheme")
+import type { Config } from 'tailwindcss'
+import { fontFamily } from "tailwindcss/defaultTheme"
 
-{import('tailwindcss').Config}
-module.exports = {
+const config: Config = {
   darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   theme: {
     container: {
       center: true,
@@ -60,11 +60,14 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        display: ['Poppins', 'sans-serif'],
-        heading: ["var(--font-heading)", ...fontFamily.sans],
+        'inter': ['Inter', 'sans-serif'],
+        'poppins': ['Poppins', 'sans-serif'],
+        'roboto': ['Roboto', 'sans-serif'],
+        'dm-sans': ['DM Sans', 'sans-serif'],
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
 }
+
+export default config

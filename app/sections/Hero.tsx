@@ -4,7 +4,8 @@ import React, { useRef, useEffect } from 'react';
 import { motion, useAnimation, useInView } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import { Button } from "@/components/ui/button";
-import { SiGithub, SiLinkedin, SiTwitter } from 'react-icons/si';
+import { SiGithub, SiLinkedin } from 'react-icons/si';
+import { MdEmail } from 'react-icons/md';
 import Image from "next/legacy/image";
 import AnimatedBackground from '../components/AnimatedBackground';
 
@@ -61,6 +62,8 @@ const Hero = () => {
                   2000,
                   'Problem Solver',
                   2000,
+                  'Lebron James Stan',
+                  2000,
                 ]}
                 wrapper="span"
                 cursor={true}
@@ -98,20 +101,21 @@ const Hero = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1, duration: 0.5 }}
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20"
+        className="absolute bottom-10 left-1/2.5 transform -translate-x-1/2 z-20"
       >
-        <div className="flex space-x-6">
+        <div className="flex justify-center space-x-6">
           {[
-            { Icon: SiGithub, href: "https://github.com", color: "#6e5494" },
-            { Icon: SiLinkedin, href: "https://linkedin.com", color: "#0077b5" },
-            { Icon: SiTwitter, href: "https://twitter.com", color: "#1DA1F2" },
-          ].map(({ Icon, href, color }, index) => (
+            { Icon: SiGithub, href: "https://github.com", ariaLabel: "GitHub" },
+            { Icon: MdEmail, href: "mailto:mlibane7@gmail.com", ariaLabel: "Email" },
+            { Icon: SiLinkedin, href: "https://linkedin.com", ariaLabel: "LinkedIn" },
+          ].map(({ Icon, href, ariaLabel }, index) => (
             <motion.a
               key={index}
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              whileHover={{ scale: 1.2, color: color }}
+              aria-label={ariaLabel}
+              whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
               className="text-2xl text-gray-400 hover:text-white transition-colors relative z-20"
             >

@@ -15,6 +15,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Github, ExternalLink } from 'lucide-react';
 import AnimatedBackground from '../components/AnimatedBackground';
+import Link from 'next/link';
 
 const projects = [
   {
@@ -72,16 +73,16 @@ const Projects = () => {
                     </div>
                   </CardContent>
                   <CardFooter className="flex justify-between">
-                    <Button variant="outline" size="sm" asChild>
-                      <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                    <Link href={project.githubLink} passHref>
+                      <Button variant="outline" size="sm" className="flex items-center" onClick={(e) => e.preventDefault()}>
                         <Github className="mr-2 h-4 w-4" /> View Code
-                      </a>
-                    </Button>
-                    <Button size="sm" asChild>
-                      <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                      </Button>
+                    </Link>
+                    <Link href={project.liveLink} passHref>
+                      <Button size="sm" className="flex items-center" onClick={(e) => e.preventDefault()}>
                         <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
-                      </a>
-                    </Button>
+                      </Button>
+                    </Link>
                   </CardFooter>
                 </Card>
               </CarouselItem>
