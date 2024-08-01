@@ -69,7 +69,7 @@ const Navigation = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
           >
-            Libane Mohamed
+            John Doe
           </motion.span>
         </Link>
         <div className="flex items-center space-x-4">
