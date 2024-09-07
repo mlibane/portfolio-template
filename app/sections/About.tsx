@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 'use client'
 
 import React from 'react';
@@ -46,10 +47,10 @@ const About = () => {
             transition={{ duration: 0.8 }}
           >
             <p className="text-base md:text-lg mb-4">
-              Hi, I'm Libane Mohamed, an aspiring Web Developer with a passion for technology and continuous learning. I'm currently completing my L3 Extended Diploma BTEC in Software Development at ELATT.
+              Hi, I&apos;m Libane Mohamed, an aspiring Web Developer with a passion for technology and continuous learning. I&apos;m currently completing my L3 Extended Diploma BTEC in Software Development at ELATT.
             </p>
             <p className="text-base md:text-lg mb-6">
-              I specialize in Next.Js, JavaScript, Django, and Tailwind CSS. I'm always eager to learn new technologies and apply my problem-solving skills to create robust web applications.
+              I specialize in Next.Js, JavaScript, Django, and Tailwind CSS. I&apos;m always eager to learn new technologies and apply my problem-solving skills to create robust web applications.
             </p>
             <div className="mb-6">
               <h3 className="text-xl md:text-2xl font-semibold mb-4">Work Experience</h3>

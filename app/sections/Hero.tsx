@@ -64,7 +64,7 @@ const Hero = () => {
             <motion.h2 variants={itemVariants} className="text-3xl lg:text-4xl font-semibold mb-6 subtitle-text">
               <TypeAnimation
                 sequence={[
-                  'Full-Stack Developer',
+                  'Web Developer',
                   2000,
                   'UI/UX Enthusiast',
                   2000,
