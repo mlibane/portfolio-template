@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react';
-import AnimatedBackground from '../components/AnimatedBackground';
+import AnimatedBackground from '@/components/AnimatedBackground';
 import { motion } from 'framer-motion';
 import Image from "next/legacy/image";
 import { Card, CardContent } from "@/components/ui/card";
@@ -9,9 +9,8 @@ import { Badge } from "@/components/ui/badge";
 
 const About = () => {
   const experiences = [
-    { company: "TechCorp", role: "Senior Full-Stack Developer", duration: "2020 - Present" },
-    { company: "WebSolutions Inc.", role: "Full-Stack Developer", duration: "2018 - 2020" },
-    { company: "StartupXYZ", role: "Junior Developer", duration: "2016 - 2018" },
+    { company: "Oliver Agency", role: "IT Support Intern", duration: "May 2023 - June 2023" },
+    { company: "Local convenience store", role: "Sales Assistant", duration: "October 2022 - August 2023" },
   ];
 
   return (
@@ -35,7 +34,7 @@ const About = () => {
           >
             <Image
               src="/profile-picture.jpg"
-              alt="John Doe"
+              alt="Libane Mohamed"
               width={300}
               height={300}
               className="rounded-lg shadow-lg"
@@ -47,14 +46,10 @@ const About = () => {
             transition={{ duration: 0.8 }}
           >
             <p className="text-base md:text-lg mb-4">
-              Hi, I&apos;m John Doe, a passionate full-stack developer with 5 years of experience
-              in creating robust web applications. I specialize in React, Node.js, and
-              MongoDB, and I&apos;m always eager to learn new technologies.
+              Hi, I'm Libane Mohamed, an aspiring Web Developer with a passion for technology and continuous learning. I'm currently completing my L3 Extended Diploma BTEC in Software Development at ELATT.
             </p>
             <p className="text-base md:text-lg mb-6">
-              When I&apos;m not coding, you can find me hiking in the mountains or experimenting
-              with new recipes in the kitchen. I believe in continuous learning and giving
-              back to the developer community through open-source contributions and mentoring.
+              I specialize in Next.Js, JavaScript, Django, and Tailwind CSS. I'm always eager to learn new technologies and apply my problem-solving skills to create robust web applications.
             </p>
             <div className="mb-6">
               <h3 className="text-xl md:text-2xl font-semibold mb-4">Work Experience</h3>
@@ -69,9 +64,9 @@ const About = () => {
               ))}
             </div>
             <div>
-              <h3 className="text-xl md:text-2xl font-semibold mb-4">Interests</h3>
+              <h3 className="text-xl md:text-2xl font-semibold mb-4">Skills & Interests</h3>
               <div className="flex flex-wrap gap-2">
-                {['Web Development', 'UI/UX Design', 'Machine Learning', 'Open Source', 'Tech Writing'].map((interest, index) => (
+                {['Web Development', 'Python', 'JavaScript', 'React.js', 'Django', 'Typescript', 'Filmmaking', 'Football'].map((interest, index) => (
                   <Badge key={index} variant="secondary">{interest}</Badge>
                 ))}
               </div>

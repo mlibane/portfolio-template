@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Progress } from "@/components/ui/progress";
 import { Card, CardContent } from "@/components/ui/card";
-import AnimatedBackground from '../components/AnimatedBackground';
+import AnimatedBackground from '@/components/AnimatedBackground';
 
 interface Skill {
   name: string;
@@ -27,18 +27,18 @@ const skillCategories = [
     name: "Backend",
     skills: [
       { name: "Node.js", level: 85, description: "RESTful APIs, authentication, and database integration" },
-      { name: "Express", level: 80, description: "Middleware, routing, and error handling" },
-      { name: "MongoDB", level: 75, description: "Schema design, aggregation pipelines, and indexing" },
-      { name: "GraphQL", level: 70, description: "Schema definition, resolvers, and integration with Apollo Server" },
+      { name: "Prisma ORM", level: 80, description: "Database modeling, migrations, and efficient querying" },
+      { name: "NextAuth.js", level: 75, description: "Authentication strategies, JWT handling, and session management" },
+      { name: "PostgreSQL", level: 75, description: "Advanced querying, indexing, and performance optimization" },
     ]
   },
   {
     name: "DevOps & Tools",
     skills: [
       { name: "Git & GitHub", level: 90, description: "Version control, branching strategies, and CI/CD workflows" },
+      { name: "Vercel", level: 85, description: "Deployments, serverless functions, and environment management" },
       { name: "Docker", level: 75, description: "Containerization, Docker Compose, and orchestration" },
-      { name: "AWS", level: 65, description: "EC2, S3, Lambda, and CloudFront services" },
-      { name: "Jest", level: 70, description: "Unit testing, mocking, and test coverage analysis" },
+      { name: "Sentry", level: 70, description: "Error tracking, performance monitoring, and issue resolution" },
     ]
   }
 ];

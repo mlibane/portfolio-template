@@ -1,14 +1,14 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
-import LoadingScreen from './components/LoadingScreen';
-import Navigation from './components/Navigation';
+import LoadingScreen from '@/components/LoadingScreen';
+import Navigation from '@/components/Navigation';
 import Hero from './sections/Hero';
 import About from './sections/About';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
 import Contact from './sections/Contact';
-import ParallaxText from './components/ParallaxText';
+import ParallaxText from '@/components/ParallaxText';
 
 export default function Home() {
   const [loading, setLoading] = useState(true);

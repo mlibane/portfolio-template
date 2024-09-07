@@ -14,24 +14,24 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Github, ExternalLink } from 'lucide-react';
-import AnimatedBackground from '../components/AnimatedBackground';
+import AnimatedBackground from '@/components/AnimatedBackground';
 
 const projects = [
   {
-    title: "Mentoring Platform",
-    description: "A full-stack mentoring solution built with Next.js, featuring real-time inventory management, secure payment processing with Stripe, and a responsive, accessibility-focused design.",
-    image: "/mentorlabs.jpg",
-    tags: ["Next.js", "Stripe", "Tailwind CSS", "PostgreSQL"],
-    githubLink: "https://github.com/yourusername/ecommerce-platform",
-    liveLink: "https://ecommerce-platform-demo.vercel.app"
+    title: "Mapley",
+    description: "A recipe sharing platform built with Django, React, and Tailwind CSS. Users can create, share, and discover recipes in a user-friendly interface.",
+    image: "/mapley-preview.jpg",
+    tags: ["Django", "React", "Tailwind CSS", "PostgreSQL"],
+    githubLink: "https://github.com/mlibane/Mapley",
+    liveLink: "https://mapley.site"
   },
   {
-    title: "AI-Powered Content Generator",
-    description: "An innovative web application that utilizes OpenAI's GPT-3 to generate high-quality, context-aware content for various purposes, including blog posts, product descriptions, and social media updates.",
-    image: "/passman.jpg",
-    tags: ["React", "Node.js", "OpenAI API", "MongoDB"],
-    githubLink: "https://github.com/yourusername/ai-content-generator",
-    liveLink: "https://ai-content-generator-demo.herokuapp.com"
+    title: "Nidix",
+    description: "A modern blogging platform that empowers writers to create, manage, and share engaging content with a seamless, user-friendly interface and powerful publishing tools.",
+    image: "/nidix-preview.jpg",
+    tags: ["Next.js", "Prisma", "TypeScript", "Tailwind CSS"],
+    githubLink: "https://github.com/mlibane/Nidix",
+    liveLink: "https://nidix.xyz"
   },
 ];
 
